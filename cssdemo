@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>css样式demo</title>
+	<style type="text/css">
+		.out{
+			font-size: 16px;
+			line-height: 40px;
+			color: #ccc;
+		}
+		.right{	
+			display: inline-block;
+			color: #333;
+			width: 48%;
+			background-color: red;
+			vertical-align: text-top;
+		}
+		.changeColor {
+			margin-top: 50px;
+			font-size: 30px;
+			font-weight: bold;
+			width: 300px;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: linear-gradient(90deg, #0F0, #f00 );
+		}
+		.box1 {
+			margin-top: 50px;
+			width: 400px;
+			height: 400px;
+			text-align: center;
+			line-height: 200px;
+			background: green;
+			border-radius: 100% 0;
+		}
+		.lg1 {
+			background-image: linear-gradient(45deg,#FC6,red,yellow);
+		}
+		.box2 {
+			margin-top: 50px;
+			width: 400px;
+			height: 60px;
+			border: 2px solid #000;
+			border-radius: 10px;
+			background-image: linear-gradient(#000, green 10%, red 30%, #fff);
+		}
+		.rainbow {
+			margin-top: 50px;
+			width: 400px;
+			height: 40px;
+			background-image: linear-gradient(to right,red, orange, yellow, green, blue, purple); 
+		}
+		.rgba {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin-top: 50px;
+		}
+		.rgba:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to bottom left, red,rgba(255, 255, 255,0))
+		}
+		.bdcolor {
+			margin-top: 50px;
+			width: 400px;
+			height: 200px;
+			border: 20px solid;
+			border-image: linear-gradient( to right, #f00, blue) 30 30 ;
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		优惠信息：
+		<div class="right">
+			<div class="item">NO1</div>
+			<div class="item">NO2</div>
+			<div class="item">NO3</div>
+		</div>	
+	</div>
+	<div class="changeColor">文字的颜色渐变demo</div>
+	<div class="box1 lg1">盒子1的背景颜色渐变</div>
+	<div class="box2 lg2">盒子2的背景颜色渐变(默认从上到下方向）</div>
+	<div class="rainbow">彩虹条背景颜色渐变(从左到右方向）</div>
+	<div class="rgba">背景颜色透明</div>
+	<div class="bdcolor">盒子边框颜色渐变demo</div>
+
+
+	<script type="text/javascript">
+		
+
+
+
+	</script>
+</body>
+</html>
